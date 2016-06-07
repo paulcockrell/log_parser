@@ -1,6 +1,6 @@
 # Log file parser
 
-Parses web log files, that have a known format of <uri path> <ip address>.
+Parses web log files, that have a known format of "uri-path ip-address".
 Renders the output to the screen as table, showing total visits by URI path,
 and unique visits by URI path.
 
