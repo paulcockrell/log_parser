@@ -80,14 +80,12 @@ describe LogParser::UriVisitCounter::UriVisit do
     end
 
     describe "#visits_count" do
-      it "should be comparable by visit count value" do
+      it "should be comparable with itself by visit count value" do
         10.times { uri_visit_1.add reading_1 }
 	20.times { uri_visit_2.add reading_2 }
 	expect([uri_visit_2, uri_visit_1].sort).to eq([uri_visit_1, uri_visit_2])
       end
-    end
 
-    describe "#visits_count" do
       it "should return all visits as a value" do
 	10.times { uri_visit_1.add reading_1 }
         expect(uri_visit_1.visit_count).to eq(10)
